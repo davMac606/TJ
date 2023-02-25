@@ -3925,8 +3925,9 @@ textarea.form-control-lg {
 }
 
 .myContainer {
-    background-color: #5f5f634f;	
+    background-color: rgb(248, 237, 226);	
     justify-content: center;	
+    text-align: center;
     border-radius: 20px;
     
 }
@@ -12358,7 +12359,7 @@ img {
 }
 
 body {
-    background-color: black;
+    background-color: rgb(248, 237, 226);
 }
 
 #marca {
@@ -12369,4 +12370,96 @@ body {
 .yellowxd {
     color: yellow;
 }
+.bg-eba {
+    background-color: rgb(248, 237, 226);
+}
+.corLetras {
+    color: rgb(34, 33, 33);
+}
+
+.grandeTriangulo {
+        width: 0; 
+        height: 0; 
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent; 
+        border-right: 50px solid rgb(255, 138, 0); 
+      }
+
+.bg-title{
+    background-color: rgb(255, 138, 0);
+}
+.titleColor {
+    color: rgb(255, 138, 0);
+}
+.hexagon {
+    width: 100px;
+    height: 55px;
+    background-color: #ffcc00;
+    position: relative;
+  }
+  .hexagon::before,
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  .hexagon::before {
+    bottom: 100%;
+    border-bottom: 27.5px solid #ffcc00;
+  }
+  .hexagon::after {
+    top: 100%;
+    width: 0;
+    border-top: 27.5px solid #ffcc00;
+  }
+  
+  .imagemGran {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mainContainer {
+    background-color: rgb(255, 138, 0);	
+    height: -170px;	
+    border-radius: 20px;
+    justify-content: center;	
+    text-align: center;
+    z-index: 1;
+    
+}
+.testeRet {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 138, 0);
+  }
+  
+  .testeRet::before,
+  .testeRet::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 138, 0);
+    transform: skew(-20deg);
+    transform-origin: 0;
+    z-index: 0;
+  }
+  
+  .testeRet::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .testeRet::after {
+    bottom: 0;
+    right: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid rgb(255, 138, 0);
+    z-index: 4;
+  }
+  
+  
 /*# sourceMappingURL=bootstrap.min.css.map */
