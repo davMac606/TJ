@@ -10,6 +10,16 @@
     <link rel="stylesheet" type="text/css" href="bootstrap-5.2.2-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
     <link rel="icon" href="img/tj.png" type="image/png">
+    <script>
+        function openPopup() {
+            document.getElementById("popup").classList.add("show");
+          }
+          
+          function closePopup() {
+            document.getElementById("popup").classList.remove("show");
+          }
+          
+    </script>
 </head>
 
 <body>
@@ -84,20 +94,72 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <div class="container myContainer ">
 
         <div class="row">
             <div class="col-md-4 col-sm-12">
-                <div class="container mainContainer testeRet">
-                    <h3 class="display3 text-bg-dark">Escolha 2 carnes</h3>
+                <div class="container mainContainer">
+                    <h3 class="display3">Escolha 2 carnes</h3>
+                    
+                </div>
+                <br>
+                <div class="container myContainer">
+                 <h3 class="display3">Defumados:</h3>
+                 <br>
+                 <p>Pulled Pork(Copa Lombo)</p>
+                 <p>Brisket(Ponta de Peito)</p>
+                 <p>Pork Belly(Panceta)</p>
+                 <p>Chicken Lollipop(Coxa de Frango)</p>
+                <br>
+                <h3 class="display3">Grelhados:</h3>
+                <br>
+                <p>Picanha</p>
+                <p>Chorizo</p>
+                <p>Linguiça Artesanal</p>
+                </div>
+                <br>
+                <br>
+                <div class="container mainContainer">
+                    <h3 class="display3">E o acompanhamento</h3>
+                 </div>
+                 <div class="container myContainer">
+                    <br>
+                    <p>Pão de Alho</p>
+                    <p>Queijo Coalho</p>
+                    <p>Pão Francês</p>
+                    <p>Pão Português</p>
+                    <p>Legumes Grelhados</p>
+                 </div>
+                
+            </div>
+            <div class="col-md-4 ">
+
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="container mainContainer">
+                    <h3 class="display3">Só falta o molho!</h3>
+                </div>
+                <div class="container myContainer">
+                    <p>Chimichurri</p>
+                    <p>Sour Cream</p>
+                    <p>Blue Cheese</p>
+                    <p>Hot Barbecue</p>
+                    <p>Creme de Cheddar</p>
                 </div>
             </div>
-        </div>
+            
+            </div>
+           
+            <button onclick="openPopup()" class="btn btn-success">Bebida?</button>
+            <div id="popup" class="popup">
+              <div class="popup-content">
+                <h2>Que tal um choppinho para arrematar?</h2>
+                <p>Seu combo já vem com 2 Chopp Lager Berggren incluso, eba!</p>
+                <button onclick="closePopup()">Close</button>
+              </div>
+            </div>
+            
 
 
-    </div>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
