@@ -10,9 +10,28 @@
     <link rel="stylesheet" type="text/css" href="bootstrap-5.2.2-dist\css\bootstrap.min.css">
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Bebas+Neue">
     <link rel="icon" href="img/tj.png" type="image/png">
+    <script>
+        function carregar() {
+            document.getElementById('entrada').style.display = "none";
+            document.getElementById('pratos').style.display = "none";
+            document.getElementById('bebidas').style.display = "none";
+            document.getElementById('drinks').style.display = "none";
+        }
+        function abreEntradas() {
+            document.getElementById('entrada').style.display = "visible";
+        }    
+
+        function openPopup() {
+            document.getElementById("popup").classList.add("show");
+          }
+          
+          function closePopup() {
+            document.getElementById("popup").classList.remove("show");
+          }
+    </script>
 </head>
 
-<body>
+<body onload="carregar()">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand">
@@ -40,6 +59,16 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="gran.html"><i class="bi bi-emoji-smile-fill" id="testeMapa"></i>Mapa</a>
                     </li>
+                    <li class="nav-item">
+                        
+                        <div id="popup" class="popup">
+                          <div class="popup-content">
+                            <h2>Que tal um choppinho para arrematar?</h2>
+                            <p>Seu combo já vem com 2 Chopp Lager Berggren incluso, eba!</p>
+                            <button onclick="closePopup()">Close</button>
+                          </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -60,112 +89,14 @@
         </div>
     </div>
     
-    <div class="container-fluid myContainer">
-
-               
-
-
-        <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <div class="card bg-dark text-white">
-                    <div class="card-body">
-                        <h5 class="card-title yellowxd">CHOPP-LAGER</h5>
-                        <p class="card-text">
-                            Berggren 400ml
-                        </p>
-                        <p class="yellowxd">Preço: R$10,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card bg-dark text-white">
-
-                    <div class="card-body">
-                        <h5 class="card-title yellowxd">CHOPP-IPA</h5>
-                        <p class="card-text">
-                            Berggren 400ml
-                        </p>
-                        <p class="yellowxd">Preço: R$15,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card bg-dark text-white">
-
-                    <div class="card-body">
-                        <h5 class="card-title yellowxd">HEINEKEN 600ML</h5>
-                        <p class="card-text">
-                            Balde com 4 unidades opcional*
-                        </p>
-                        <p class="yellowxd">Preço: R$16,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card bg-dark text-white">
-
-                    <div class="card-body">
-                        <h5 class="card-title yellowxd">ORIGINAL 600ML</h5>
-                        <p class="card-text">
-                            Balde com 4 unidades opcional*
-                        </p>
-                        <p class="yellowxd">Preço: R$14,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <div class="card bg-dark text-white">
-                    <div class="card-body">
-                        <h5 class="card-title yellowxd">SUCO</h5>
-                        <p class="card-text">
-                            Polpa: frutas vermelhas, maracujá ou abacaxi
-                        </p>
-                        <p class="yellowxd">Preço: R$8,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card bg-dark text-white">
-                    <div class="card-body">
-                        <h5 class="card-title yellowxd">REFRIGERANTES</h5>
-                        <p class="card-text">
-                            Coca, Guaraná, Coca Zero e Fanta
-                        </p>
-                        <p class="yellowxd">Preço: R$6,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card bg-eba text-white">
-                    <div class="card-body">
-                        <h5 class="card-title titleColor">ENERGÉTICO RED BULL</h5>
-                        <p class="card-text corLetras">
-                            Tradicional, Melancia
-                        </p>
-                        <p class="titleColor">Preço: R$15,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="card bg-dark text-white">
-                    <div class="card-body">
-                        <h5 class="card-title yellowxd">ÁGUA</h5>
-                        <p class="card-text">
-                            Com ou sem gás
-                        </p>
-                        <p class="yellowxd">Preço: R$4,00</p>
-                    </div>
-                </div>
-            </div>
+    <div class="container containerEntradas" id="entrada">
+        <div class="container mainContainer">
+            <h3 class="display3">Escolha 2 carnes</h3>
+            
         </div>
     </div>
-    <div class="container-fluid myContainer">
-        
-    </div>
-    </div>
+
+      
 
 
 
