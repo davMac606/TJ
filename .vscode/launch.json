@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-msedge",
+            "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\aluno\\TJ\\index.html"
+            "file": "C:\\Users\\user\\TJ\\index.html"
         }
     ]
 }
